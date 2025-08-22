@@ -1,20 +1,11 @@
-# Porikalan Computer Institute — Website
+# Porikalan Computer Institute — Website (Single Photo Gallery)
+React + TypeScript (Vite) website with Tailwind (via CDN) and your institute photo embedded.
 
-React + TypeScript (Vite) single-page app. Tailwind is loaded via the CDN (no config needed).
-
-## Run locally
-```bash
+## Local Development
 npm install
 npm run dev
-```
-Open the URL shown (usually http://localhost:5173).
 
-## Build (optional for static hosting)
-```bash
-npm run build
-npm run preview
-```
-
-## Deploy
-- **GitHub**: create a new repo and upload all files from this folder.
-- **Vercel/Netlify**: import the GitHub repo. Framework: **Vite**. Build command: `npm run build`. Output dir: `dist`.
+## Deploy (Vercel)
+Framework: Vite
+Build: npm run build
+Output: dist
