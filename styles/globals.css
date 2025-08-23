@@ -1,0 +1,30 @@
+
+:root{--blue:#2b7df0;--green:#26a85b;--muted:#6b7280}
+*{box-sizing:border-box}body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;color:#111;line-height:1.5;background:#fff}
+.header{background:#fff;box-shadow:0 1px 0 rgba(0,0,0,0.06);position:sticky;top:0;z-index:10}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.nav{display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:700}
+.navlinks{display:flex;gap:12px;align-items:center}
+.navlinks a{color:#111;text-decoration:none;padding:8px 12px;border-radius:6px}
+.navlinks a.active{background:var(--blue);color:#fff}
+.hero{background:linear-gradient(180deg,#f6fbff,#fff);padding:48px 0}
+.grid{display:grid;grid-template-columns:1fr 420px;gap:20px;align-items:center}
+.hero h1{font-size:34px;margin:0;color:var(--blue)}
+.btn{display:inline-block;padding:10px 14px;border-radius:8px;text-decoration:none;font-weight:600}
+.btn-primary{background:var(--blue);color:#fff}
+.btn-green{background:var(--green);color:#fff}
+.cards{display:flex;gap:16px;margin-top:20px;flex-wrap:wrap}
+.card{background:#fff;padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,35,0.06);flex:1;min-width:220px}
+.photos{display:flex;gap:16px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+.photos img{width:320px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,35,0.08);max-width:100%}
+.certificate-section{background:#f7f7f8;padding:40px 0;text-align:center;border-top:1px solid #eee}
+.certificate-box{max-width:420px;margin:0 auto;background:#fff;padding:20px;border-radius:10px;box-shadow:0 6px 18px rgba(12,20,35,0.04)}
+.certificate-box input{width:100%;padding:10px;margin:8px 0;border:1px solid #e6e6e6;border-radius:6px}
+.certificate-box button{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;background:var(--blue);color:#fff;font-weight:600}
+.footer{padding:30px;text-align:center;color:var(--muted);font-size:14px;margin-top:30px;border-top:1px solid #eee}
+@media (max-width:900px){
+  .grid{grid-template-columns:1fr}
+  .photos img{width:100%;max-width:480px}
+  .navlinks{gap:8px}
+}
